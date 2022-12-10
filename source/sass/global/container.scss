@@ -2,7 +2,8 @@
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
-  padding: 0 352px;
+  padding: 0 10%;
+  // поменяла с 352px для удобного отображения контента
 
   @include tablet {
     padding: 0 40px;

@@ -1,0 +1,27 @@
+.favourite {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 15px;
+  border-radius: 37px;
+  padding: 7px;
+  transition: background-color $trans-03;
+
+  @include mobile {
+    margin: 0 0 0 5px;
+  }
+
+  &:hover {
+    background-color: $color-white-smoke;
+    transition: background-color $trans-03;
+  }
+
+  span {
+    line-height: 19px;
+    margin: 0 0 0 10px;
+  }
+
+  svg {
+    color: $color-dark-gray;
+  }
+}

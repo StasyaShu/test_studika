@@ -1,0 +1,81 @@
+.city-form {
+  display: flex;
+  flex-direction: column;
+
+  fieldset {
+    border: none;
+    border-bottom: 1px solid $color-gainsboro;
+  }
+
+  &__header {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 24px 16px 15px;
+    margin: 0;
+
+    span {
+      width: 123px;
+      border: 1px solid $color-gainsboro;
+      border-radius: 100px;
+      padding: 14px 25px;
+      margin: 22px 5px 10px 0;
+    }
+  }
+
+  &__header-input {
+    width: 100%;
+    position: relative;
+  }
+
+  &__header input {
+    width: 100%;
+    border: 1px solid $color-gainsboro;
+    border-radius: 100px;
+    padding: 14px 25px;
+
+    &:focus {
+      outline: 0;
+      border: 2px solid $color-tropical-blue;
+      padding: 13px 24px;
+    }
+
+    &::placeholder {
+      color: $color-dark-gray;
+    }
+  }
+
+  &__reset-button {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    display: none;
+  }
+
+  &__submit-button {
+    border-radius: 0px 0px 10px 10px;
+  }
+
+  &__body {
+    padding: 16px 0 25px;
+    margin: 0;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  &__item {
+    cursor: pointer;
+    width: 100%;
+    padding: 10px 23px;
+    transition: background-color $trans-03;
+
+    &:hover {
+      background-color: $color-white-smoke;
+      transition: background-color $trans-03;
+    }
+  }
+}

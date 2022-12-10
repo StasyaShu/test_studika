@@ -1,0 +1,20 @@
+.login {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 33px;
+  transition: color $trans-03;
+
+  &:hover {
+    color: $color-grey;
+    transition: color $trans-03;
+  }
+
+  @include mobile {
+    display: none;
+  }
+
+  picture {
+    margin: 0 0 0 7px;
+  }
+}

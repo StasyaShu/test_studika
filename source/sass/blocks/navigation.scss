@@ -3,6 +3,10 @@
   position: relative;
   width: 100%;
 
+  @include mobile {
+    display: none;
+  }
+
   &__list {
     list-style: none;
     padding: 0;

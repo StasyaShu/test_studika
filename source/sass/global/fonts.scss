@@ -1,10 +1,19 @@
 @font-face {
-    font-style: normal;
-    font-weight: 400;
-    font-family: "opensans";
+  font-style: normal;
+  font-weight: 400;
+  font-family: "opensans";
 
-    font-display: swap;
-    src:
-      url("../fonts/opensans-regular.woff2") format("woff2"),
-      url("../fonts/opensans-regular.woff") format("woff");
-  }
+  font-display: swap;
+  src: url("../fonts/opensans-regular.woff2") format("woff2"),
+       url("../fonts/opensans-regular.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 500;
+  font-family: "formular";
+
+  font-display: swap;
+  src: url("../fonts/formular-medium.woff2") format("woff2"),
+       url("../fonts/formular-medium.woff") format("woff");
+}

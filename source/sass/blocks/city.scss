@@ -1,5 +1,68 @@
 .city {
-  &__list {
+  position: relative;
+
+  @include mobile {
     display: none;
+  }
+
+  &__header {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    span {
+      margin: 0 0 0 8px;
+      white-space: nowrap;
+    }
+  }
+
+  &__icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    padding: 0 3px 0 0;
+    border: 1px solid $color-dark-gray;
+    color: $color-dark-gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  &__list {
+    position: absolute;
+    margin: 14px 0 0 0;
+  }
+}
+
+.city__header--is-chosen {
+  padding: 6px 20px 4px 35px;
+  background-color: $color-white-smoke;
+  border-radius: 37px;
+  position: relative;
+  max-width: 192px;
+
+  .city__icon {
+    position: absolute;
+    left: 9px;
+    top: 50%;
+    margin-top: -11px;
+    width: auto;
+    height: auto;
+    border-radius: none;
+    padding: 0;
+    border: none;
+  }
+
+  span {
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  svg {
+    width: 13px;
+    height: 24px;
   }
 }

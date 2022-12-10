@@ -8,9 +8,45 @@
     padding: 24px 0 16px;
   }
 
+  &__button {
+    display: none;
+
+    @include mobile {
+      display: block;
+    }
+  }
+
   &__tools {
     display: flex;
     align-items: center;
     margin: 0 0 24px;
+
+    @include mobile {
+      justify-content: space-between;
+    }
+  }
+
+  &__logo {
+    margin: 0 16px 0 0;
+
+    @include mobile {
+      margin: 0;
+    }
+  }
+
+  &__city {
+    margin: 0 10px 0 0;
+  }
+
+  &__personal {
+    margin: 0 0 0 auto;
+
+    @include mobile {
+      margin: 0;
+    }
+  }
+
+  &__search {
+    margin: 0 0 0 60px;
   }
 }

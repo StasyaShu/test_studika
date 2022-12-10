@@ -7,6 +7,7 @@
   <meta name="description" content="Тестовое задание для Studika: Выполнила Шулепова С.В.">
   <link href="css/style.min.css" rel="stylesheet">
   <link rel="preload" href="fonts/opensans-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/formular-medium.woff2" as="font" type="font/woff2" crossorigin>
   <title>Тестовое задание для Studika</title>
 </head>
 
@@ -15,7 +16,14 @@
     <div class="container">
       <div class="header__wrapper">
         <div class="header__tools">
-          <div class="header__logo">
+          <div class="header__button">
+            <button class="button button--burger" type="button"><span class="visually-hidden">Открыть меню</span>
+              <svg width="24" height="18" viewBox="0 0 24 18">
+                <use xlink:href="img/sprite.svg#icon-burger"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="header__logo header-logo">
             <a class="header__logo-link" aria-label="Главный логотип-ссылка для перехода на главную"><svg width="88"
                 height="32" viewBox="0 0 88 32">
                 <use xlink:href="img/sprite.svg#icon-logo-main"></use>
@@ -30,30 +38,31 @@
               </div>
               <span>Любой регион</span>
             </div>
-            <div class="city__list" id="cities-list">
+            <div class="city__list city-list" id="cities-list">
               <form class="city-form" action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data"
-                autocomplete="off">
+                autocomplete="off" data-input>
                 <fieldset class="city-form__header">
-                  <input type="text" placeholder="Регион, город, населенный пункт" id="region">
-                  <label for="region"></label>
-                  <button class="city-form__reset" type="reset"><span class="visually-hidden">Очистить поле воода
-                      города</span>
-                    <svg width="14" height="14" viewBox="0 0 14 14">
-                      <use xlink:href="img/sprite.svg#icon-close"></use>
-                    </svg>
-                  </button>
+                  <div class="city-form__header-input">
+                    <input type="text" placeholder="Регион, город, населенный пункт" id="region">
+                    <button class="city-form__reset-button button button--reset" type="reset" data-btn-reset><span
+                        class="visually-hidden">Очистить поле воода города</span>
+                      <svg width="14" height="14" viewBox="0 0 14 14">
+                        <use xlink:href="img/sprite.svg#icon-close"></use>
+                      </svg>
+                    </button>
+                  </div>
                 </fieldset>
                 <fieldset class="city-form__body">
-                  <select id="city-name" name="city-name">
-                    <option value="All" selected>Любой регион</option>
-                    <option value="Moscow">Московская область</option>
-                    <option value="Russia">Вся Россия</option>
-                    <option value="Saint-Petersburg">Санкт-Петербург</option>
-                    <option value="Novosibirsk">Новосибирск</option>
-                    <option value="Yekaterinburg">Екатеринбург</option>
-                  </select>
+                  <ul class="city-form__list">
+                    <li class="city-form__item">Любой регион</li>
+                    <li class="city-form__item">Московская область</li>
+                    <li class="city-form__item">Вся Россия</li>
+                    <li class="city-form__item">Санкт-Петербург</li>
+                    <li class="city-form__item">Новосибирск</li>
+                    <li class="city-form__item">Екатеринбург</li>
+                  </ul>
                 </fieldset>
-                <button class="city-form__submit" type="submit">Сохранить</button>
+                <button class="city-form__submit-button button button--save" type="submit">Сохранить</button>
               </form>
             </div>
           </div>
@@ -61,7 +70,16 @@
             <svg width="17" height="17" viewBox="0 0 17 17">
               <use xlink:href="img/sprite.svg#icon-search"></use>
             </svg>
-            <input type="text" placeholder="Учебное заведение, специальность или профессия" autocomplete="off">
+            <form action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data" autocomplete="off"
+              data-input>
+              <input type="text" placeholder="Учебное заведение, специальность или профессия" autocomplete="off">
+              <button class="search__button-clear button button--reset" type="reset" data-btn-reset><span
+                  class="visually-hidden">Очистить поле ввода</span>
+                <svg width="14" height="14" viewBox="0 0 14 14">
+                  <use xlink:href="img/sprite.svg#icon-close"></use>
+                </svg>
+              </button>
+            </form>
           </div>
           <div class="header__personal personal-area">
             <div class="personal-area__favourite favourite">
@@ -70,7 +88,7 @@
               </svg>
               <span>1</span>
             </div>
-            <div class="personal-area__login">
+            <div class="personal-area__login login">
               <span>Екатерина</span>
               <picture>
                 <source type="image/webp" srcset="img/img-avatar@1x.webp 1x, img/img-avatar@2x.webp 2x">

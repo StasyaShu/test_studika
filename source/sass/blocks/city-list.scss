@@ -1,0 +1,16 @@
+.city-list {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity $trans-03;
+  background-color: $color-snow;
+  box-shadow: 0px 7px 38px rgba(44, 62, 106, 0.25);
+  border-radius: 10px;
+  width: 384px;
+  z-index: 5;
+}
+
+.city-list--show {
+    pointer-events: all;
+  opacity: 1;
+  transition: opacity $trans-03;
+}

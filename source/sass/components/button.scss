@@ -1,0 +1,46 @@
+.button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+
+  &--burger {
+    transition: opacity $trans-03;
+
+    &:hover {
+      opacity: 0.8;
+      transition: opacity $trans-03;
+    }
+    @include mobile {
+      margin: 0 12px 0 0;
+    }
+  }
+
+  &--reset {
+    color: $color-dark-gray;
+  }
+
+  &--save {
+    padding: 16px;
+    text-align: center;
+    font-family: $font--formular;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    color: $color-dark-gray;
+    transition: background-color $trans-03, color $trans-03;
+
+    &:hover {
+      background-color: $color-cobalt-09;
+      color: $color-white;
+      transition: background-color $trans-03, color $trans-03;
+    }
+  }
+
+  &--active {
+    color: $color-white;
+    background-color: $color-cobalt;
+  }
+}
