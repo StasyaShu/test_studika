@@ -1,0 +1,20 @@
+.sublist {
+  list-style: none;
+  padding: 10px 14px;
+  margin: 0;
+  background-color: $color-snow;
+  box-shadow: 0px 6px 38px rgba(44, 62, 106, 0.1);
+  border-radius: 10px;
+
+  &__item:not(:last-child) {
+    margin: 0 0 11px;
+  }
+
+  &__link {
+    color: $color-nero;
+
+    &:hover {
+        text-decoration: underline;
+    }
+  }
+}

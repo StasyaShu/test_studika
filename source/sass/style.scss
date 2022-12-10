@@ -11,8 +11,15 @@
 
 // Components
 
-
+@import "components/city-form";
+@import "components/search";
+@import "components/favourite";
+@import "components/sublist";
 
 // Blocks
 
+@import "blocks/header";
+@import "blocks/city";
+@import "blocks/personal-area";
+@import "blocks/navigation";
 

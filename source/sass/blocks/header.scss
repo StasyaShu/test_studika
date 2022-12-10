@@ -1,0 +1,16 @@
+.header {
+  width: 100%;
+  background-color: $color-white;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 0 16px;
+  }
+
+  &__tools {
+    display: flex;
+    align-items: center;
+    margin: 0 0 24px;
+  }
+}

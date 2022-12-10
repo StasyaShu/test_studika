@@ -16,17 +16,46 @@
       <div class="header__wrapper">
         <div class="header__tools">
           <div class="header__logo">
-            <svg width="88" height="32" viewBox="0 0 88 32">
-              <use xlink:href="img/sprite.svg#icon-logo-main"></use>
-            </svg>
+            <a class="header__logo-link" aria-label="Главный логотип-ссылка для перехода на главную"><svg width="88"
+                height="32" viewBox="0 0 88 32">
+                <use xlink:href="img/sprite.svg#icon-logo-main"></use>
+              </svg></a>
           </div>
           <div class="header__city city" id="city">
-            <div class="city__icon">
-              <svg width="16" height="19" viewBox="0 0 16 19">
-                <use xlink:href="img/sprite.svg#icon-city"></use>
-              </svg>
+            <div class="city__header">
+              <div class="city__icon">
+                <svg width="16" height="19" viewBox="0 0 16 19">
+                  <use xlink:href="img/sprite.svg#icon-city"></use>
+                </svg>
+              </div>
+              <span>Любой регион</span>
             </div>
-            <span>Любой регион</span>
+            <div class="city__list" id="cities-list">
+              <form class="city-form" action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data"
+                autocomplete="off">
+                <fieldset class="city-form__header">
+                  <input type="text" placeholder="Регион, город, населенный пункт" id="region">
+                  <label for="region"></label>
+                  <button class="city-form__reset" type="reset"><span class="visually-hidden">Очистить поле воода
+                      города</span>
+                    <svg width="14" height="14" viewBox="0 0 14 14">
+                      <use xlink:href="img/sprite.svg#icon-close"></use>
+                    </svg>
+                  </button>
+                </fieldset>
+                <fieldset class="city-form__body">
+                  <select id="city-name" name="city-name">
+                    <option value="All" selected>Любой регион</option>
+                    <option value="Moscow">Московская область</option>
+                    <option value="Russia">Вся Россия</option>
+                    <option value="Saint-Petersburg">Санкт-Петербург</option>
+                    <option value="Novosibirsk">Новосибирск</option>
+                    <option value="Yekaterinburg">Екатеринбург</option>
+                  </select>
+                </fieldset>
+                <button class="city-form__submit" type="submit">Сохранить</button>
+              </form>
+            </div>
           </div>
           <div class="header__search search">
             <svg width="17" height="17" viewBox="0 0 17 17">
@@ -54,22 +83,70 @@
         <nav class="header__menu navigation">
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a href="#" class="navigation__link" aria-label="ссылка на раздел Вузы">Вузы</a>
+              <a href="#" class="navigation__link navigation__link--active" aria-label="ссылка на раздел Вузы">Вузы</a>
+              <ul class="navigation__sublist sublist">
+                <li class="sublist__item">
+                  <a href="#" class="sublist__link" aria-label="выбор вуза">МГУ</a>
+                </li>
+                <li class="sublist__item">
+                  <a href="#" class="sublist__link" aria-label="выбор вуза">СПбГУ</a>
+                </li>
+              </ul>
             </li>
             <li class="navigation__item">
               <a href="#" class="navigation__link" aria-label="ссылка на раздел Колледжи">Колледжи</a>
+              <ul class="navigation__sublist sublist">
+                <li class="sublist__item">
+                  <a href="#" class="sublist__link" aria-label="выбор колледжа">МГУ</a>
+                </li>
+                <li class="sublist__item">
+                  <a href="#" class="sublist__link" aria-label="выбор колледжа">СПбГУ</a>
+                </li>
+              </ul>
             </li>
             <li class="navigation__item">
               <a href="#" class="navigation__link" aria-label="ссылка на раздел Техникумы">Техникумы</a>
+              <ul class="navigation__sublist sublist">
+                <li class="sublist__item">
+                  <a href="#" class="sublist__link" aria-label="выбор техникума">МГУ</a>
+                </li>
+                <li class="sublist__item">
+                  <a href="#" class="sublist__link" aria-label="выбор техникума">СПбГУ</a>
+                </li>
+              </ul>
             </li>
             <li class="navigation__item">
               <a href="#" class="navigation__link" aria-label="ссылка на раздел Училища">Училища</a>
+              <ul class="navigation__sublist sublist">
+                <li class="sublist__item">
+                  <a href="#" class="sublist__link" aria-label="выбор училища">МГУ</a>
+                </li>
+                <li class="sublist__item">
+                  <a href="#" class="sublist__link" aria-label="выбор училища">СПбГУ</a>
+                </li>
+              </ul>
             </li>
             <li class="navigation__item">
               <a href="#" class="navigation__link" aria-label="ссылка на раздел Специальности">Специальности</a>
+              <ul class="navigation__sublist sublist">
+                <li class="sublist__item">
+                  <a href="#" class="sublist__link" aria-label="выбор специальности">Высшее</a>
+                </li>
+                <li class="sublist__item">
+                  <a href="#" class="sublist__link" aria-label="выбор специальности">Среднее</a>
+                </li>
+              </ul>
             </li>
             <li class="navigation__item">
               <a href="#" class="navigation__link" aria-label="ссылка на раздел Профессии">Профессии</a>
+              <ul class="navigation__sublist sublist">
+                <li class="sublist__item">
+                  <a href="#" class="sublist__link" aria-label="выбор профессии">Программист</a>
+                </li>
+                <li class="sublist__item">
+                  <a href="#" class="sublist__link" aria-label="выбор профессии">Логист</a>
+                </li>
+              </ul>
             </li>
             <li class="navigation__item">
               <a href="#" class="navigation__link" aria-label="ссылка на раздел Отзывы">Отзывы</a>
