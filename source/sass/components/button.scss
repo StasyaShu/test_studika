@@ -4,6 +4,8 @@
   border: none;
   padding: 0;
   margin: 0;
+  fill: none;
+  color: $color-nero;
 
   &--burger {
     transition: opacity $trans-03;
@@ -42,5 +44,24 @@
   &--active {
     color: $color-white;
     background-color: $color-cobalt;
+  }
+
+  &--arrow-left {
+    outline: 0;
+    offset: none;
+    z-index: 1;
+    padding: 11px 15px 9px 0;
+    background: linear-gradient(to right, $color-white 39.69%, $color-white-03 76.86%);
+
+    svg {
+      transform: rotate(180deg);
+    }
+  }
+
+  &--arrow-right {
+    outline: 0;
+    offset: none;
+    padding: 11px 9px 9px 60px;
+    background: linear-gradient(to left, $color-white 39.69%, $color-white-03 82.86%);
   }
 }

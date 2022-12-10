@@ -99,86 +99,98 @@
           </div>
         </div>
         <nav class="header__menu navigation">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a href="#" class="navigation__link navigation__link--active" aria-label="ссылка на раздел Вузы">Вузы</a>
-              <ul class="navigation__sublist sublist">
-                <li class="sublist__item">
-                  <a href="#" class="sublist__link" aria-label="выбор вуза">МГУ</a>
-                </li>
-                <li class="sublist__item">
-                  <a href="#" class="sublist__link" aria-label="выбор вуза">СПбГУ</a>
-                </li>
-              </ul>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link" aria-label="ссылка на раздел Колледжи">Колледжи</a>
-              <ul class="navigation__sublist sublist">
-                <li class="sublist__item">
-                  <a href="#" class="sublist__link" aria-label="выбор колледжа">МГУ</a>
-                </li>
-                <li class="sublist__item">
-                  <a href="#" class="sublist__link" aria-label="выбор колледжа">СПбГУ</a>
-                </li>
-              </ul>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link" aria-label="ссылка на раздел Техникумы">Техникумы</a>
-              <ul class="navigation__sublist sublist">
-                <li class="sublist__item">
-                  <a href="#" class="sublist__link" aria-label="выбор техникума">МГУ</a>
-                </li>
-                <li class="sublist__item">
-                  <a href="#" class="sublist__link" aria-label="выбор техникума">СПбГУ</a>
-                </li>
-              </ul>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link" aria-label="ссылка на раздел Училища">Училища</a>
-              <ul class="navigation__sublist sublist">
-                <li class="sublist__item">
-                  <a href="#" class="sublist__link" aria-label="выбор училища">МГУ</a>
-                </li>
-                <li class="sublist__item">
-                  <a href="#" class="sublist__link" aria-label="выбор училища">СПбГУ</a>
-                </li>
-              </ul>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link" aria-label="ссылка на раздел Специальности">Специальности</a>
-              <ul class="navigation__sublist sublist">
-                <li class="sublist__item">
-                  <a href="#" class="sublist__link" aria-label="выбор специальности">Высшее</a>
-                </li>
-                <li class="sublist__item">
-                  <a href="#" class="sublist__link" aria-label="выбор специальности">Среднее</a>
-                </li>
-              </ul>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link" aria-label="ссылка на раздел Профессии">Профессии</a>
-              <ul class="navigation__sublist sublist">
-                <li class="sublist__item">
-                  <a href="#" class="sublist__link" aria-label="выбор профессии">Программист</a>
-                </li>
-                <li class="sublist__item">
-                  <a href="#" class="sublist__link" aria-label="выбор профессии">Логист</a>
-                </li>
-              </ul>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link" aria-label="ссылка на раздел Отзывы">Отзывы</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link" aria-label="ссылка на раздел Учебным заведениям">Учебным
-                заведениям</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link" aria-label="ссылка на раздел Тест на профориентацию">Тест на
-                профориентацию</a>
-            </li>
-          </ul>
-          <button class="navigation__button" type="button"><span class="visually-hidden">Листать далее</span></button>
+          <button class="navigation__button button button--arrow-left" type="button" data-nav-button-left><span class="visually-hidden">Листать
+            назад</span><svg width="8" height="14" viewBox="0 0 8 14">
+            <use xlink:href="img/sprite.svg#icon-arrow"></use>
+          </svg>
+        </button>
+          <div class="navigation__wrapper dragscroll">
+            <ul class="navigation__list" data-nav>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link navigation__link--active"
+                  aria-label="ссылка на раздел Вузы">Вузы</a>
+                <ul class="navigation__sublist sublist">
+                  <li class="sublist__item">
+                    <a href="#" class="sublist__link" aria-label="выбор вуза">МГУ</a>
+                  </li>
+                  <li class="sublist__item">
+                    <a href="#" class="sublist__link" aria-label="выбор вуза">СПбГУ</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link" aria-label="ссылка на раздел Колледжи">Колледжи</a>
+                <ul class="navigation__sublist sublist">
+                  <li class="sublist__item">
+                    <a href="#" class="sublist__link" aria-label="выбор колледжа">МГУ</a>
+                  </li>
+                  <li class="sublist__item">
+                    <a href="#" class="sublist__link" aria-label="выбор колледжа">СПбГУ</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link" aria-label="ссылка на раздел Техникумы">Техникумы</a>
+                <ul class="navigation__sublist sublist">
+                  <li class="sublist__item">
+                    <a href="#" class="sublist__link" aria-label="выбор техникума">МГУ</a>
+                  </li>
+                  <li class="sublist__item">
+                    <a href="#" class="sublist__link" aria-label="выбор техникума">СПбГУ</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link" aria-label="ссылка на раздел Училища">Училища</a>
+                <ul class="navigation__sublist sublist">
+                  <li class="sublist__item">
+                    <a href="#" class="sublist__link" aria-label="выбор училища">МГУ</a>
+                  </li>
+                  <li class="sublist__item">
+                    <a href="#" class="sublist__link" aria-label="выбор училища">СПбГУ</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link" aria-label="ссылка на раздел Специальности">Специальности</a>
+                <ul class="navigation__sublist sublist">
+                  <li class="sublist__item">
+                    <a href="#" class="sublist__link" aria-label="выбор специальности">Высшее</a>
+                  </li>
+                  <li class="sublist__item">
+                    <a href="#" class="sublist__link" aria-label="выбор специальности">Среднее</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link" aria-label="ссылка на раздел Профессии">Профессии</a>
+                <ul class="navigation__sublist sublist">
+                  <li class="sublist__item">
+                    <a href="#" class="sublist__link" aria-label="выбор профессии">Программист</a>
+                  </li>
+                  <li class="sublist__item">
+                    <a href="#" class="sublist__link" aria-label="выбор профессии">Логист</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link" aria-label="ссылка на раздел Отзывы">Отзывы</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link" aria-label="ссылка на раздел Учебным заведениям">Учебным
+                  заведениям</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link" aria-label="ссылка на раздел Тест на профориентацию">Тест на
+                  профориентацию</a>
+              </li>
+            </ul>
+          </div>
+          <button class="navigation__button button button--arrow-right" type="button" data-nav-button-right><span class="visually-hidden">Листать
+              далее</span><svg width="8" height="14" viewBox="0 0 8 14">
+              <use xlink:href="img/sprite.svg#icon-arrow"></use>
+            </svg>
+          </button>
         </nav>
       </div>
     </div>

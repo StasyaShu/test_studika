@@ -1,10 +1,20 @@
 .navigation {
   display: flex;
-  position: relative;
   width: 100%;
+  position: relative;
 
   @include mobile {
     display: none;
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &__wrapper {
+    width: 100%;
+    overflow: hidden;
+    padding: 0 0 0 15px;
   }
 
   &__list {
@@ -15,6 +25,7 @@
     align-items: center;
     width: 100%;
     position: relative;
+    transition: margin $trans-03;
   }
 
   &__item {
@@ -58,10 +69,18 @@
     background-color: $color-white-smoke;
   }
 
-  &__button {
+  &__button:first-child {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -18px;
+  }
+
+  &__button:last-child {
     position: absolute;
     top: 50%;
     right: 0;
+    margin-top: -18px;
   }
 }
 
