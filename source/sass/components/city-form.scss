@@ -1,6 +1,7 @@
 .city-form {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 
   fieldset {
     border: none;
@@ -14,11 +15,13 @@
     margin: 0;
 
     span {
-      width: 123px;
+      // width: 123px;
       border: 1px solid $color-gainsboro;
       border-radius: 100px;
       padding: 14px 25px;
-      margin: 22px 5px 10px 0;
+      margin: 12px 5px 10px 0;
+      text-align: center;
+      white-space: nowrap;
     }
   }
 
@@ -73,9 +76,14 @@
     padding: 10px 23px;
     transition: background-color $trans-03;
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: $color-white-smoke;
       transition: background-color $trans-03;
     }
+  }
+
+  &__item--active {
+    background-color: $color-white-smoke;
   }
 }

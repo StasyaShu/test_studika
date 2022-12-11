@@ -35,34 +35,36 @@
   }
 }
 
-.city__header--is-chosen {
-  padding: 6px 20px 4px 35px;
-  background-color: $color-white-smoke;
-  border-radius: 37px;
-  position: relative;
-  max-width: 192px;
+.city.is-chosen {
+  .city__header {
+    padding: 10px 20px 10px 35px;
+    background-color: $color-white-smoke;
+    border-radius: 37px;
+    position: relative;
+    max-width: 192px;
 
-  .city__icon {
-    position: absolute;
-    left: 9px;
-    top: 50%;
-    margin-top: -11px;
-    width: auto;
-    height: auto;
-    border-radius: none;
-    padding: 0;
-    border: none;
-  }
+    .city__icon {
+      position: absolute;
+      left: 9px;
+      top: 50%;
+      margin-top: -11px;
+      width: auto;
+      height: auto;
+      border-radius: none;
+      padding: 0;
+      border: none;
+    }
 
-  span {
-    margin: 0;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-  }
+    span {
+      margin: 0;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
 
-  svg {
-    width: 13px;
-    height: 24px;
+    svg {
+      width: 13px;
+      height: 24px;
+    }
   }
 }

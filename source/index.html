@@ -40,28 +40,29 @@
             </div>
             <div class="city__list city-list" id="cities-list">
               <form class="city-form" action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data"
-                autocomplete="off" data-input>
-                <fieldset class="city-form__header">
-                  <div class="city-form__header-input">
-                    <input type="text" placeholder="Регион, город, населенный пункт" id="region">
-                    <button class="city-form__reset-button button button--reset" type="reset" data-btn-reset><span
-                        class="visually-hidden">Очистить поле воода города</span>
-                      <svg width="14" height="14" viewBox="0 0 14 14">
-                        <use xlink:href="img/sprite.svg#icon-close"></use>
-                      </svg>
-                    </button>
-                  </div>
-                </fieldset>
-                <fieldset class="city-form__body">
-                  <ul class="city-form__list">
-                    <li class="city-form__item">Любой регион</li>
-                    <li class="city-form__item">Московская область</li>
-                    <li class="city-form__item">Вся Россия</li>
-                    <li class="city-form__item">Санкт-Петербург</li>
-                    <li class="city-form__item">Новосибирск</li>
-                    <li class="city-form__item">Екатеринбург</li>
-                  </ul>
-                </fieldset>
+                autocomplete="off" id="city-form" data-input>
+                  <fieldset class="city-form__header">
+                    <div class="city-form__header-input">
+                      <input type="text" placeholder="Регион, город, населенный пункт" id="region">
+                      <button class="city-form__reset-button button button--reset" type="reset" data-btn-reset><span
+                          class="visually-hidden">Очистить поле воода города</span>
+                        <svg width="14" height="14" viewBox="0 0 14 14">
+                          <use xlink:href="img/sprite.svg#icon-close"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <!-- <span>Москва</span> -->
+                  </fieldset>
+                  <fieldset class="city-form__body">
+                    <ul class="city-form__list">
+                      <li class="city-form__item">Любой регион</li>
+                      <li class="city-form__item">Московская область</li>
+                      <li class="city-form__item">Вся Россия</li>
+                      <li class="city-form__item">Санкт-Петербург</li>
+                      <li class="city-form__item">Новосибирск</li>
+                      <li class="city-form__item">Екатеринбург</li>
+                    </ul>
+                  </fieldset>
                 <button class="city-form__submit-button button button--save" type="submit">Сохранить</button>
               </form>
             </div>
