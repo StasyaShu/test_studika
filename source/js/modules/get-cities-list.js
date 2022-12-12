@@ -11,6 +11,7 @@ const getData = () => {
     .then((result) => {
       const regions = result;
       const cities = regions.map((el) => el.cities);
+      console.log(cities) // проверка полученных данных по названиям городов
     })
     .catch((error) => console.log(error.message));
 };
